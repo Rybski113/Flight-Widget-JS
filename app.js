@@ -37,3 +37,15 @@ let flights = [
         remarks: "DELAYED"
       }
 ];
+
+function populateTable() {
+    for (const flight of flights) {
+       const tableRow = document.createElement('tr')
+
+       for(const flightDetail in flight) {
+        const tableCell = document.createElement('td')
+       }
+
+       tableBody.append(tableRow)
+    }
+}
